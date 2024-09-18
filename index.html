@@ -130,6 +130,34 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2024/09/18/Python编程基础-二/" >Python编程基础(二)</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2024-09-18  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>第一回我们了解到了Python解释器如何安装、如何使用一个变量简化我们的代码以及如何运行一个简单的Python文件。这第二回我们聊聊Python中的基本数据类型</p>
+
+	
+	</div>
+  <a type="button" href="/2024/09/18/Python编程基础-二/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2024/09/18/Python编程基础-一/" >Python编程基础(一)</a>
 		</h3>
 		</div>
@@ -144,7 +172,72 @@
   <div class="row">
 	
 	
-		<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World!&quot;</span>)</span><br></pre></td></tr></table></figure>
+		<h2 id="Python简介"><a href="#Python简介" class="headerlink" title="Python简介"></a>Python简介</h2><p>人生苦短，我用Python！相信很多人都听说过这句话，现在都2024了，少儿编程都开始上Python，你还能不知道？好吧…其实这就是一门编程语言，说到编程语言，不会还有人不知道什么是编程语言吧q^q<br>言归正传，书接上回~   </p>
+<ul>
+<li><p>关于Python</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Python/407313">百度百科</a></li>
+</ul>
+</li>
+<li><p>在线教程</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-tutorial.html">菜鸟教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/python/python_intro.asp">w3school</a></li>
+<li><a target="_blank" rel="noopener" href="https://liaoxuefeng.com/books/python/introduction/index.html">廖雪峰</a></li>
+</ul>
+</li>
+<li><p>编程语言排行</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.tiobe.com/tiobe-index/">编程语言排行</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="第一行代码必须是它！！！"><a href="#第一行代码必须是它！！！" class="headerlink" title="第一行代码必须是它！！！"></a>第一行代码必须是它！！！</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World!&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行上述命令需要什么条件呢？</p>
+<ul>
+<li>首先你得有一个Python解释器<ul>
+<li>下载地址<a target="_blank" rel="noopener" href="https://www.python.org/downloads/">Python官网下载</a></li>
+<li>安装步骤详见<a target="_blank" rel="noopener" href="https://liaoxuefeng.com/books/python/install/index.html">安装步骤</a></li>
+</ul>
+</li>
+<li>安装之后进入命令行终端<ul>
+<li>idle(Python自带安装)</li>
+<li>Win(win键+r)调出命令行后输入python，前提是安装时勾选了将python安装路径加入了环境变量(Path)中~~~</li>
+</ul>
+</li>
+<li>然后将上述命令输入终端，回车…<br><img src="/images/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C1.png" alt="运行效果"></li>
+<li>Bingo!!!完成了Python入门的第一行代码！</li>
+</ul>
+<h2 id="新的需求-一-将输出的Hello-World-字符重复输出五遍"><a href="#新的需求-一-将输出的Hello-World-字符重复输出五遍" class="headerlink" title="新的需求(一):将输出的Hello World!字符重复输出五遍"></a>新的需求(一):将输出的Hello World!字符重复输出五遍</h2><ul>
+<li>你的想法是不是这样？<br><img src="/images/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C2.png" alt="运行效果"></li>
+<li>简直离谱！！！和我当初学习的时候一模一样~当然这是一种解决办法，但是它不够好，不符合我们的教义(“人生苦短，我用Python”)</li>
+<li>看看教培机构的老师<br><img src="/images/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C3.png" alt="运行效果"></li>
+<li>只能说够差强人意，再改改应该能行！<br><img src="/images/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C4.png" alt="运行效果"></li>
+<li>这会是有点那味儿了~~~那么问题来了，为什么会多输出一个换行符？</li>
+</ul>
+<h2 id="新的需求-二-将代码复制给他人"><a href="#新的需求-二-将代码复制给他人" class="headerlink" title="新的需求(二):将代码复制给他人"></a>新的需求(二):将代码复制给他人</h2><p>因为使用cmd或idle启用python命令行终端，此时的数据是保存在内存中的，那么我们该如何将代码复制给他人？</p>
+<ul>
+<li>将代码写入文件并以.py为文件后缀名<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi hello.py</span><br></pre></td></tr></table></figure>
+<img src="/images/%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B61.png" alt="编辑文件"></li>
+<li>运行文件<br><img src="/images/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C5.png" alt="运行效果"></li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>了解了Python解释器</li>
+<li>变量使用<ul>
+<li>变量命名规范：<ul>
+<li>由数字、字母、下划线组成</li>
+<li>不能由数字开头</li>
+<li>不能使用Python关键字</li>
+<li>见名知意</li>
+<li>PEP8</li>
+</ul>
+</li>
+<li>Python关键字<br>  <img src="/images/%E5%85%B3%E9%94%AE%E5%AD%97.png" alt="运行效果"></li>
+</ul>
+</li>
+<li>转义字符\n–换行</li>
+</ol>
 
 	
 	</div>
@@ -233,6 +326,10 @@
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2024/09/18/Python编程基础-二/" ><i class="fa fa-file-o"></i>Python编程基础(二)</a>
+      </li>
     
       <li>
         <a href="/2024/09/18/Python编程基础-一/" ><i class="fa fa-file-o"></i>Python编程基础(一)</a>
